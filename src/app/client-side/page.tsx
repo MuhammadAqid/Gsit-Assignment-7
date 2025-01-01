@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type Product = {
     id: number;
@@ -59,7 +60,7 @@ const ProductsPage: React.FC = () => {
                         className="p-4 bg-white shadow-md rounded-lg text-gray-700"
                     >
                         <div className="w-full flex justify-center m-2">
-                        <img src={product.image} className="w-40 h-auto"/>
+                        <Image src={product.image} alt="product image" className="w-40 h-auto"/>
                         </div>
                         <h2 className="text-xl font-semibold my-2">{product.title}</h2>
                         <p>{product.description}</p>
