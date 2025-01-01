@@ -6,7 +6,7 @@ import Image from "next/image";
 type Product = {
     id: number;
     title: string;
-    image: any;
+    image: string;
     price: number;
     description: string;
 };
